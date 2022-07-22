@@ -1,8 +1,8 @@
 /* eslint-disable @nrwl/nx/enforce-module-boundaries */
-import { createTamagui } from '@nx-tamagui-example/ui'
-import { createInterFont } from '@tamagui/font-inter'
-import { shorthands } from '@tamagui/shorthands'
-import { themes, tokens } from '@tamagui/theme-base'
+import { createTamagui } from '@nx-tamagui-example/ui';
+import { createInterFont } from '@tamagui/font-inter';
+import { shorthands } from '@tamagui/shorthands';
+import { themes, tokens } from '@tamagui/theme-base';
 
 // import { animations } from './animations'
 
@@ -33,7 +33,7 @@ const headingFont = createInterFont({
     14: -5,
     15: -6,
   },
-})
+});
 
 const bodyFont = createInterFont(
   {},
@@ -41,10 +41,10 @@ const bodyFont = createInterFont(
     sizeSize: (size) => Math.round(size * 1.1),
     sizeLineHeight: (size) => Math.round(size * 1.1 + (size > 20 ? 10 : 10)),
   }
-)
+);
 
 export const config = createTamagui({
-//   animations,
+  //   animations,
   defaultTheme: 'light',
   shouldAddPrefersColorThemes: true,
   themeClassNameOnRoot: true,
@@ -54,7 +54,12 @@ export const config = createTamagui({
     body: bodyFont,
   },
   themes,
-  tokens,
+  tokens: {
+    ...tokens,
+    color: {
+      my: 'red',
+    },
+  },
   media: {
     xs: { maxWidth: 660 },
     sm: { maxWidth: 800 },
@@ -71,6 +76,6 @@ export const config = createTamagui({
     hoverNone: { hover: 'none' },
     pointerCoarse: { pointer: 'coarse' },
   },
-})
+});
 
 export default config;

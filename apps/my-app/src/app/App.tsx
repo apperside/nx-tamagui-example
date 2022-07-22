@@ -3,15 +3,16 @@ import { config as Tamagui } from '@nx-tamagui-example/config';
 import {
   Anchor,
   Button,
-  H1, MyComponent, Paragraph,
+  H1,
+  MyComponent,
+  Paragraph,
+  MyCard,
   Separator,
   XStack,
-  YStack
+  YStack,
 } from '@nx-tamagui-example/ui';
 import React, { useRef, useState } from 'react';
-import {
-  ScrollView, StyleSheet
-} from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 
 export const App = () => {
   const [whatsNextYCoord, setWhatsNextYCoord] = useState<number>(0);
@@ -31,6 +32,7 @@ export const App = () => {
             another. This screen uses the same code on Next.js and React Native.
           </Paragraph>
           <MyComponent />
+          <MyCard />
           <Separator />
           <Paragraph ta="center">
             Tamagui is made by{' '}
@@ -45,7 +47,6 @@ export const App = () => {
             >
               on Github
             </Anchor>
-            .
           </Paragraph>
         </YStack>
 

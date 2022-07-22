@@ -10,6 +10,6 @@
     "react": "*",
     "react-native": "*",
     "react-native-config": "*",
-    "react-native-svg": "*"
+    "react-native-svg": "12.4.0"
   }
 }

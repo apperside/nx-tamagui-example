@@ -8,7 +8,8 @@
     "test": "nx test",
     "web": "nx run web:serve",
     "ios": "npx nx run-ios my-app",
-    "android": "npx nx run-android my-app"
+    "android": "npx nx run-android my-app",
+    "postinstall": "cd apps/my-app && yarn && cd .. && nx run my-app:ensure-symlink"
   },
   "workspaces": [
     "libs/*"

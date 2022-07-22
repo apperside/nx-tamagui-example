@@ -1,7 +1,9 @@
 "use strict";
+var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __export = (target, all) => {
   for (var name in all)
@@ -15,19 +17,24 @@ var __copyProps = (to, from, except, desc) => {
   }
   return to;
 };
-var __reExport = (target, mod, secondTarget) => (__copyProps(target, mod, "default"), secondTarget && __copyProps(secondTarget, mod, "default"));
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target, mod));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-var src_exports = {};
-__export(src_exports, {
-  Conf: () => import_global.Conf
+var MyCard_exports = {};
+__export(MyCard_exports, {
+  MyCard: () => MyCard
 });
-module.exports = __toCommonJS(src_exports);
-__reExport(src_exports, require("tamagui"), module.exports);
-__reExport(src_exports, require("./MyComponent"), module.exports);
-__reExport(src_exports, require("./MyCard"), module.exports);
-var import_global = require("./global");
+module.exports = __toCommonJS(MyCard_exports);
+var import_tamagui = require("tamagui");
+var import_react = __toESM(require("react"));
+function MyCard({ children }) {
+  return /* @__PURE__ */ import_react.default.createElement(import_tamagui.Stack, {
+    br: "$4",
+    bc: "my",
+    minHeight: 10
+  }, children);
+}
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  Conf
+  MyCard
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=MyCard.js.map
