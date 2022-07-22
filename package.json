@@ -6,9 +6,9 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "web":"nx run web:serve",
-    "ios":"npx nx run-ios my-app",
-    "android":"npx nx run-android my-app"
+    "web": "nx run web:serve",
+    "ios": "npx nx run-ios my-app",
+    "android": "npx nx run-android my-app"
   },
   "workspaces": [
     "libs/*"
@@ -47,6 +47,7 @@
     "@react-native-community/cli": "7.0.3",
     "@react-native-community/cli-platform-android": "7.0.1",
     "@react-native-community/cli-platform-ios": "7.0.1",
+    "@tamagui/babel-plugin": "^1.0.1-beta.116",
     "@tamagui/next-plugin": "^1.0.1-beta.113",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/jest-native": "4.0.5",
@@ -60,6 +61,7 @@
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
     "babel-jest": "27.5.1",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.4",
     "cypress": "^9.1.0",
     "detox": "19.7.1",
     "eslint": "~8.15.0",
