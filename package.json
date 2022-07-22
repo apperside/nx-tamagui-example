@@ -5,7 +5,10 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "web":"nx run web:serve",
+    "ios":"npx nx run-ios my-app",
+    "android":"npx nx run-android my-app"
   },
   "workspaces": [
     "libs/*"
@@ -19,6 +22,7 @@
     "@tamagui/shorthands": "1.0.1-beta.115",
     "@tamagui/theme-base": "1.0.1-beta.115",
     "core-js": "^3.6.5",
+    "expo": "^45.0.0",
     "next": "12.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
