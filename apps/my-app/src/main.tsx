@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './app/App';
+import EntryPoint from './app/EntryPoint';
 
-AppRegistry.registerComponent('MyApp', () => App);
+AppRegistry.registerComponent('MyApp', () => EntryPoint);

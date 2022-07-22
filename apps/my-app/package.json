@@ -10,6 +10,9 @@
     "react": "*",
     "react-native": "*",
     "react-native-config": "*",
-    "react-native-svg": "12.4.0"
+    "react-native-svg": "12.4.0",
+    "@react-navigation/native":"*",
+    "react-native-screens":"*",
+    "react-native-safe-area-context":"*"
   }
 }
