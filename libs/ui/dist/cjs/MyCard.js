@@ -26,9 +26,10 @@ __export(MyCard_exports, {
 module.exports = __toCommonJS(MyCard_exports);
 var import_tamagui = require("tamagui");
 var import_react = __toESM(require("react"));
-function MyCard({ children }) {
+function MyCard({ children, ...props }) {
   return /* @__PURE__ */ import_react.default.createElement(import_tamagui.Stack, {
     br: "$4",
+    ...props,
     bc: "$myColor",
     minHeight: 10
   }, children);

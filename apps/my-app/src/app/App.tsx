@@ -1,12 +1,13 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import { config as Tamagui } from '@nx-tamagui-example/ui';
+import { config as Tamagui } from '@nx-tamagui-example/config';
 import {
   Anchor,
   Button,
   H1,
+  H5,
+  MyCard,
   MyComponent,
   Paragraph,
-  MyCard,
   Separator,
   XStack,
   YStack,
@@ -24,7 +25,7 @@ export const App = () => {
       disableRootThemeClass
       defaultTheme={'light'}
     >
-      <YStack f={1} jc="center" bc="$background" ai="center" p="$4" space>
+      <YStack f={1} bc="$background" jc="center" ai="center" p="$4" space>
         <YStack space="$4" maw={600}>
           <H1 ta="center">Welcome to Tamagui.</H1>
           <Paragraph ta="center">
@@ -32,7 +33,6 @@ export const App = () => {
             another. This screen uses the same code on Next.js and React Native.
           </Paragraph>
           <MyComponent />
-          <MyCard />
           <Separator />
           <Paragraph ta="center">
             Tamagui is made by{' '}
@@ -49,10 +49,12 @@ export const App = () => {
             </Anchor>
           </Paragraph>
         </YStack>
-
-        {/* <XStack>
+        <MyCard p="$3" br="$1">
+          <H5>This is my custom component</H5>
+        </MyCard>
+        <XStack>
           <Button href="/user/nate">Link to user</Button>
-        </XStack> */}
+        </XStack>
       </YStack>
     </Tamagui.Provider>
   );

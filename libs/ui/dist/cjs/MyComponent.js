@@ -24,7 +24,7 @@ module.exports = __toCommonJS(MyComponent_exports);
 var import_tamagui = require("tamagui");
 const MyComponent = (0, import_tamagui.styled)(import_tamagui.Text, {
   name: "MyComponent",
-  bc: "$blue5Light",
+  bc: "$blue5",
   fontFamily: "$body",
   fontSize: "$12"
 });
