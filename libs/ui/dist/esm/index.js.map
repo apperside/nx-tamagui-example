@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../src/index.tsx"],
-  "sourcesContent": ["export * from 'tamagui';\nexport * from './MyComponent';\nexport * from './MyCard';\nexport { Conf } from './global';\n"],
-  "mappings": "AAAA;AACA;AACA;AACA;",
+  "sourcesContent": ["export * from 'tamagui';\nexport * from './MyComponent';\nexport * from './MyCard';\n\nexport { default as config, Conf } from './global';\n\n"],
+  "mappings": "AAAA;AACA;AACA;AAEA;",
   "names": []
 }

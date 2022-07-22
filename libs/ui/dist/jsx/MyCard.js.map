@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../src/MyCard.tsx"],
-  "sourcesContent": ["import { Stack, styled, Text } from 'tamagui'\n\nimport React from 'react'\n\ntype Props = {children:any}\n\nexport function MyCard({children}: Props) {\n  return (\n    <Stack br=\"$4\" bc=\"my\" minHeight={10}>{children}</Stack>\n  )\n}"],
-  "mappings": "AAAA;AAMO,gBAAgB,EAAC,YAAkB;AACxC,SACE,CAAC,MAAM,GAAG,KAAK,GAAG,KAAK,WAAW,KAAK,SAAS,EAA/C;AAEL;",
+  "sourcesContent": ["import { Stack, styled, Text } from 'tamagui'\n\nimport React from 'react'\n\ntype Props = {children:any}\n\nexport function MyCard({children}: Props) {\n  return (\n    <Stack br=\"$4\" bc=\"$myColor\" minHeight={10}>{children}</Stack>\n  )\n}"],
+  "mappings": "AAAA;AAMO,gBAAgB,EAAC,YAAkB;AACxC,SACE,CAAC,MAAM,GAAG,KAAK,GAAG,WAAW,WAAW,KAAK,SAAS,EAArD;AAEL;",
   "names": []
 }

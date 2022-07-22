@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import { config as Tamagui } from '@nx-tamagui-example/config';
+import { config as Tamagui } from '@nx-tamagui-example/ui';
 import {
   Anchor,
   Button,

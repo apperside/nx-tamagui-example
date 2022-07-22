@@ -22,7 +22,7 @@ __export(tamagui_config_exports, {
   default: () => tamagui_config_default
 });
 module.exports = __toCommonJS(tamagui_config_exports);
-var import_ui = require("@nx-tamagui-example/ui");
+var import_tamagui = require("tamagui");
 var import_font_inter = require("@tamagui/font-inter");
 var import_shorthands = require("@tamagui/shorthands");
 var import_theme_base = require("@tamagui/theme-base");
@@ -58,7 +58,7 @@ const bodyFont = (0, import_font_inter.createInterFont)({}, {
   sizeSize: (size) => Math.round(size * 1.1),
   sizeLineHeight: (size) => Math.round(size * 1.1 + (size > 20 ? 10 : 10))
 });
-const config = (0, import_ui.createTamagui)({
+const config = (0, import_tamagui.createTamagui)({
   defaultTheme: "light",
   shouldAddPrefersColorThemes: true,
   themeClassNameOnRoot: true,
@@ -71,7 +71,7 @@ const config = (0, import_ui.createTamagui)({
   tokens: {
     ...import_theme_base.tokens,
     color: {
-      my: "red"
+      myColor: "yellow"
     }
   },
   media: {

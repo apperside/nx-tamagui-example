@@ -1,8 +1,9 @@
 export * from "tamagui";
 export * from "./MyComponent";
 export * from "./MyCard";
-import { Conf } from "./global";
+import { default as default2, Conf } from "./global";
 export {
-  Conf
+  Conf,
+  default2 as config
 };
 //# sourceMappingURL=index.js.map

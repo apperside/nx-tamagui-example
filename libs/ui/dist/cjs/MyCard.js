@@ -29,7 +29,7 @@ var import_react = __toESM(require("react"));
 function MyCard({ children }) {
   return /* @__PURE__ */ import_react.default.createElement(import_tamagui.Stack, {
     br: "$4",
-    bc: "my",
+    bc: "$myColor",
     minHeight: 10
   }, children);
 }

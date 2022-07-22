@@ -57,7 +57,7 @@ export const config = createTamagui({
   tokens: {
     ...tokens,
     color: {
-      my: 'red',
+      myColor: 'red',
     },
   },
   media: {

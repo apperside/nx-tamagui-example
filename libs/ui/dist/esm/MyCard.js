@@ -3,7 +3,7 @@ import React from "react";
 function MyCard({ children }) {
   return /* @__PURE__ */ React.createElement(Stack, {
     br: "$4",
-    bc: "my",
+    bc: "$myColor",
     minHeight: 10
   }, children);
 }

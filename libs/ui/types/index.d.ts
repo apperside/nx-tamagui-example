@@ -1,5 +1,5 @@
 export * from 'tamagui';
 export * from './MyComponent';
 export * from './MyCard';
-export { Conf } from './global';
+export { default as config, Conf } from './global';
 //# sourceMappingURL=index.d.ts.map
