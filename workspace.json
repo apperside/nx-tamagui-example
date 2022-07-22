@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "config": "libs/config",
+    "my-app": "apps/my-app",
+    "my-app-e2e": "apps/my-app-e2e",
     "ui": "libs/ui",
     "web": "apps/web",
     "web-e2e": "apps/web-e2e"
