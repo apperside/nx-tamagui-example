@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/UserDetails.tsx"],
+  "sourcesContent": ["import {\n  H5\n} from 'tamagui';\n\n\nexport const UserDetails = () => {\n  return <>User detail</>;\n};\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAKO,MAAM,cAAc,MAAM;AAC/B,SAAO,0DAAE,aAAW;AACtB;",
+  "names": []
+}

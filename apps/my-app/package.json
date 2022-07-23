@@ -19,6 +19,7 @@
     "expo-linking": "*",
     "@react-navigation/native-stack": "*",
     "tamagui": "*",
-    "solito": "*"
+    "solito": "*",
+    "moti": "*"
   }
 }

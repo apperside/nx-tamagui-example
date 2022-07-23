@@ -17,25 +17,26 @@ var __copyProps = (to, from, except, desc) => {
   }
   return to;
 };
-var __reExport = (target, mod, secondTarget) => (__copyProps(target, mod, "default"), secondTarget && __copyProps(secondTarget, mod, "default"));
 var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target, mod));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-var src_exports = {};
-__export(src_exports, {
-  Conf: () => import_global.Conf,
-  config: () => import_global.default
+var AppProvider_exports = {};
+__export(AppProvider_exports, {
+  AppProvider: () => AppProvider,
+  default: () => AppProvider_default
 });
-module.exports = __toCommonJS(src_exports);
-__reExport(src_exports, require("tamagui"), module.exports);
-__reExport(src_exports, require("./MyComponent"), module.exports);
-__reExport(src_exports, require("./MyCard"), module.exports);
-__reExport(src_exports, require("./AppProvider"), module.exports);
-__reExport(src_exports, require("./UserDetails"), module.exports);
-__reExport(src_exports, require("./HomePage"), module.exports);
-var import_global = __toESM(require("./global"));
+module.exports = __toCommonJS(AppProvider_exports);
+var import_config = require("@nx-tamagui-example/config");
+var import_react = __toESM(require("react"));
+const AppProvider = ({ children }) => {
+  return /* @__PURE__ */ import_react.default.createElement(import_config.config.Provider, {
+    disableInjectCSS: true,
+    disableRootThemeClass: true,
+    defaultTheme: "light"
+  }, children);
+};
+var AppProvider_default = AppProvider;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  Conf,
-  config
+  AppProvider
 });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=AppProvider.js.map
