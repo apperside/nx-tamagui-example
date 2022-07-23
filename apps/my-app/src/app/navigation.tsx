@@ -1,12 +1,9 @@
-import { HomeScreen, UserDetails } from "@nx-tamagui-example/ui";
+import { HomeScreen, UserDetails } from '@nx-tamagui-example/ui';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as Linking from 'expo-linking';
 import React from 'react';
 
-import {
-  NavigationContainer
-} from '@react-navigation/native';
-
+import { NavigationContainer } from '@react-navigation/native';
 
 const Stack = createNativeStackNavigator<{
   home: undefined;
@@ -30,7 +27,11 @@ export function NativeNavigation() {
         },
       }}
     >
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          animation: 'slide_from_right',
+        }}
+      >
         <Stack.Screen
           name="home"
           component={HomeScreen}
