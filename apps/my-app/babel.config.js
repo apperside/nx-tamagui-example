@@ -20,6 +20,7 @@ module.exports = (api) => {
           include: 'TAMAGUI_TARGET',
         },
       ],
+      'react-native-reanimated/plugin',
     ],
 
     presets: ['module:metro-react-native-babel-preset'],

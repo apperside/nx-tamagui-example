@@ -1,4 +1,7 @@
 {
   "name": "MyApp",
-  "displayName": "MyApp"
+  "displayName": "MyApp",
+  "expo": {
+    "scheme": "myapp"
+  }
 }
