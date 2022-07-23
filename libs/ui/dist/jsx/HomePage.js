@@ -35,7 +35,7 @@ const HomeScreen = () => {
         {"."}
       </Paragraph>
     </YStack>
-    <XStack><TextLink style={{ color: "white" }} href="/user/apperside"><Label color="$blue10" cursor="pointer">Link to user detail screen</Label></TextLink></XStack>
+    <XStack><Label color="$blue10" cursor="pointer"><TextLink style={{ color: "white" }} href="/user/apperside">Link to user detail screen</TextLink></Label></XStack>
   </YStack>;
 };
 var HomePage_default = HomeScreen;

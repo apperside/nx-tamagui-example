@@ -54,7 +54,7 @@ export const HomeScreen = () => {
 
       <XStack>
         {/* <Button href={'/user/nate'}>Link to user</Button> */}
-        <TextLink style={{color:"white"}} href="/user/apperside"><Label color="$blue10" cursor={"pointer"}>Link to user detail screen</Label></TextLink>
+        <Label color="$blue10" cursor={"pointer"}><TextLink style={{color:"white"}} href="/user/apperside">Link to user detail screen</TextLink></Label>
       </XStack>
     </YStack>
   );

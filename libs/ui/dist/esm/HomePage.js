@@ -42,12 +42,12 @@ const HomeScreen = () => {
     href: "https://github.com/apperside/nx-tamagui-example",
     target: "_blank",
     rel: "noreferrer"
-  }, "on Github"), ".")), /* @__PURE__ */ React.createElement(XStack, null, /* @__PURE__ */ React.createElement(TextLink, {
-    style: { color: "white" },
-    href: "/user/apperside"
-  }, /* @__PURE__ */ React.createElement(Label, {
+  }, "on Github"), ".")), /* @__PURE__ */ React.createElement(XStack, null, /* @__PURE__ */ React.createElement(Label, {
     color: "$blue10",
     cursor: "pointer"
+  }, /* @__PURE__ */ React.createElement(TextLink, {
+    style: { color: "white" },
+    href: "/user/apperside"
   }, "Link to user detail screen"))));
 };
 var HomePage_default = HomeScreen;
