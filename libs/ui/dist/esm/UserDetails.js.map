@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../src/UserDetails.tsx"],
-  "sourcesContent": ["import {\n  H5\n} from 'tamagui';\n\n\nexport const UserDetails = () => {\n  return <>User detail</>;\n};\n"],
-  "mappings": "AAKO,MAAM,cAAc,MAAM;AAC/B,SAAO,0DAAE,aAAW;AACtB;",
+  "sourcesContent": ["import { Button, Paragraph, YStack } from '@nx-tamagui-example/ui'\nimport React from 'react'\nimport { createParam } from 'solito'\nimport { useLink } from 'solito/link'\n\nconst { useParam } = createParam<{ id: string }>()\n\nexport function UserDetails() {\n  const [id] = useParam('id')\n  const linkProps = useLink({ href: '/' })\n\n  return (\n    <YStack f={1} jc=\"center\" ai=\"center\" space>\n      <Paragraph ta=\"center\" fow=\"800\">{`User ID: ${id}`}</Paragraph>\n      <Button {...linkProps} >\n        Go Home\n      </Button>\n    </YStack>\n  )\n}\n\nexport default UserDetails\n"],
+  "mappings": "AAAA;AACA;AACA;AACA;AAEA,MAAM,EAAE,aAAa,YAA4B;AAE1C,uBAAuB;AAC5B,QAAM,CAAC,MAAM,SAAS,IAAI;AAC1B,QAAM,YAAY,QAAQ,EAAE,MAAM,IAAI,CAAC;AAEvC,SACE,oCAAC;AAAA,IAAO,GAAG;AAAA,IAAG,IAAG;AAAA,IAAS,IAAG;AAAA,IAAS,OAAK;AAAA,KACzC,oCAAC;AAAA,IAAU,IAAG;AAAA,IAAS,KAAI;AAAA,KAAO,YAAY,IAAK,GACnD,oCAAC;AAAA,IAAQ,GAAG;AAAA,KAAY,SAExB,CACF;AAEJ;AAEA,IAAO,sBAAQ;",
   "names": []
 }

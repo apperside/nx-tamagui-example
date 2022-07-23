@@ -4,7 +4,7 @@ function MyCard({ children, ...props }) {
   return /* @__PURE__ */ React.createElement(Stack, {
     br: "$4",
     ...props,
-    bc: "$myColor",
+    bc: "red",
     minHeight: 10
   }, children);
 }

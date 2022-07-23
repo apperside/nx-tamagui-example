@@ -6,7 +6,7 @@ type Props = { children: any };
 
 export function MyCard({ children, ...props }: Props & StackPropsBase) {
   return (
-    <Stack br="$4" {...props} bc="$myColor" minHeight={10}>
+    <Stack br="$4" {...props} bc="red" minHeight={10}>
       {children}
     </Stack>
   );

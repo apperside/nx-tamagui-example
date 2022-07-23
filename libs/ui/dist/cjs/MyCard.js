@@ -30,7 +30,7 @@ function MyCard({ children, ...props }) {
   return /* @__PURE__ */ import_react.default.createElement(import_tamagui.Stack, {
     br: "$4",
     ...props,
-    bc: "$myColor",
+    bc: "red",
     minHeight: 10
   }, children);
 }

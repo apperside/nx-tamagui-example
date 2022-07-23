@@ -1,5 +1,5 @@
 import { config } from '@nx-tamagui-example/config';
-export declare type Conf = typeof config;
+declare type Conf = typeof config;
 declare module 'tamagui' {
     interface TamaguiCustomConfig extends Conf {
     }

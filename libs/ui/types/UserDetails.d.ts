@@ -1,2 +1,3 @@
-export declare const UserDetails: () => JSX.Element;
+export declare function UserDetails(): JSX.Element;
+export default UserDetails;
 //# sourceMappingURL=UserDetails.d.ts.map

@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../src/AppProvider.tsx"],
-  "sourcesContent": ["/* eslint-disable jsx-a11y/accessible-emoji */\n/* eslint-disable jsx-a11y/accessible-emoji */\nimport { config as Tamagui } from '@nx-tamagui-example/config';\nimport React from \"react\"\nexport const AppProvider = ({children}:any) => {\n  return (\n    <Tamagui.Provider\n      disableInjectCSS\n      disableRootThemeClass\n      defaultTheme={'light'}\n    >\n     \n        {children}\n    </Tamagui.Provider>\n  );\n};\nexport default AppProvider;\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAEA,oBAAkC;AAClC,mBAAkB;AACX,MAAM,cAAc,CAAC,EAAC,eAAkB;AAC7C,SACE,mDAAC,qBAAQ,UAAR;AAAA,IACC,kBAAgB;AAAA,IAChB,uBAAqB;AAAA,IACrB,cAAc;AAAA,KAGX,QACL;AAEJ;AACA,IAAO,sBAAQ;",
+  "sourcesContent": ["/* eslint-disable jsx-a11y/accessible-emoji */\n/* eslint-disable jsx-a11y/accessible-emoji */\nimport { config as Tamagui } from '@nx-tamagui-example/config';\nimport React from 'react';\nexport const AppProvider = ({ children }: any) => {\n  return (\n    <Tamagui.Provider\n      disableInjectCSS\n      disableRootThemeClass\n      defaultTheme={'light'}\n    >\n      {children}\n    </Tamagui.Provider>\n  );\n};\nexport default AppProvider;\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAEA,oBAAkC;AAClC,mBAAkB;AACX,MAAM,cAAc,CAAC,EAAE,eAAoB;AAChD,SACE,mDAAC,qBAAQ,UAAR;AAAA,IACC,kBAAgB;AAAA,IAChB,uBAAqB;AAAA,IACrB,cAAc;AAAA,KAEb,QACH;AAEJ;AACA,IAAO,sBAAQ;",
   "names": []
 }

@@ -15,7 +15,7 @@ if (disableExtraction) {
 }
 
 const tamaguiConfig = {
-  config: 'libs/config/src/AppTheme.ts',
+  config: './apps/web/tamagui.config.ts',
   components: ['tamagui', '@nx-tamagui-example/ui','@nx-tamagui-example/config'],
   
   logTimings: true,
@@ -59,16 +59,16 @@ const nextConfig = {
 };
 
 const transform = withPlugins([
+  [withExpo, { projectRoot: __dirname }],
+  withNx(nextConfig),
+  withTamagui(tamaguiConfig),
   withTM([
     'solito',
     'react-native-web',
     'expo-linking',
     'expo-constants',
-    '@nx-tamagui-example/ui',
+    '@nx-tamagui-example/ui'
   ]),
-  [withExpo, { projectRoot: __dirname }],
-  withNx(nextConfig),
-  withTamagui(tamaguiConfig),
 ]);
 
 module.exports = function (name, { defaultConfig }) {

@@ -1,78 +1,63 @@
 import {
-  Button, H5, YStack
-} from 'tamagui';
+  Anchor, H1, MyComponent, Paragraph,
+  Separator,
+  XStack,
+  YStack
+} from '@nx-tamagui-example/ui';
 import { TextLink } from 'solito/link';
+import { Label } from 'tamagui';
+import React from "react"
 
 export const HomeScreen = () => {
-  //   const randomWidth = useSharedValue(10);
-  //   const config = {
-  //     duration: 500,
-  //     easing: Easing.bezier(0.5, 0.01, 0, 1),
-  //   };
-  //   const style = useAnimatedStyle(() => {
-  //     return {
-  //       width: withTiming(randomWidth.value, config),
-  //     };
-  //   });
-  // const navigation = useNavigation();
-  return (
-    <YStack>
-      <H5>HOME</H5>
-      {/* <MotiView
-        from={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ type: 'timing' }}
-      >
-        <Label
-          selectable={false}
-          fontSize={16}
-          color="black"
-          fontWeight={'bold'}
-        >
-          Moti anumated Link
-        </Label>
-      </MotiView> */}
-      {/* <Animated.View
-        style={[
-          { width: 100, height: 80, backgroundColor: 'black', margin: 30 },
-          style,
-        ]}
-      /> */}
-      <Button
-        onPress={() => {
-          // navigation.navigate('user-detail' as any);
-          // randomWidth.value = Math.random() * 350;
-        }}
-      >
-        toggle
-      </Button>
-      <TextLink
-        // to={{ screen: 'user-detail', params: { id: 'simo' } }}
-        href={"/user/simo"}
-        style={{backgroundColor:"red"}}
-        //   animate={({ hovered, pressed }) => {
-        //     'worklet'
 
-        //     return {
-        //       scale: pressed ? 0.95 : hovered ? 1.1 : 1,
-        //       rotateZ: pressed ? '0deg' : hovered ? '-3deg' : '0deg',
-        //     }
-        //   }}
-        // transition={{
-        //   type: 'timing',
-        //   duration: 150,
-        // }}
-      >
-        <H5
-          selectable={false}
-          fontSize={16}
-          color="black"
-          fontWeight={'bold'}
-        >
-          Moti Link
-        </H5>
-      </TextLink>
+  return (
+    <YStack f={1} jc="center" ai="center" p="$4" space>
+      <YStack space="$4" maw={600}>
+        <H1 ta="center">Welcome to Tamagui.</H1>
+        <Paragraph ta="center">
+          Here is a basic starter to show navigating from one screen to another.
+          This screen uses the same code on Next.js and React Native.
+        </Paragraph>
+        <MyComponent />
+        <Separator />
+        <Paragraph ta="center">
+          Tamagui is made by{' '}
+          <Anchor href="https://twitter.com/natebirdman" target="_blank">
+            Nate Wienert
+          </Anchor>
+          , give it a star{' '}
+          <Anchor
+            href="https://github.com/tamagui/tamagui"
+            target="_blank"
+            rel="noreferrer"
+          >
+            on Github
+          </Anchor>
+          .
+        </Paragraph>
+        <Paragraph ta="center">
+          This app is made by{' '}
+          <Anchor href="https://apperside.com" target="_blank">
+            Apperside
+          </Anchor>
+          , give it a star{' '}
+          <Anchor
+            href="https://github.com/apperside/nx-tamagui-example"
+            target="_blank"
+            rel="noreferrer"
+          >
+            on Github
+          </Anchor>
+          .
+        </Paragraph>
+      </YStack>
+
+      <XStack>
+        {/* <Button href={'/user/nate'}>Link to user</Button> */}
+        <TextLink style={{color:"white"}} href="/user/apperside"><Label color="$blue10" cursor={"pointer"}>Link to user detail screen</Label></TextLink>
+      </XStack>
     </YStack>
   );
 };
 
+export default HomeScreen;
