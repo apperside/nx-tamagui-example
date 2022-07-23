@@ -2,8 +2,8 @@ import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 
-import React, { useMemo } from 'react';
-import { config as Tamagui } from '@nx-tamagui-example/config';
+import { AppProvider } from '@nx-tamagui-example/ui';
+import { useMemo } from 'react';
 
 export default function App({ Component, pageProps }: AppProps) {
   const [theme, setTheme] = useRootTheme();
@@ -21,13 +21,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <NextThemeProvider onChangeTheme={setTheme}>
-        <Tamagui.Provider
-          disableInjectCSS
-          disableRootThemeClass
-          defaultTheme={theme}
-        >
+        <AppProvider theme={theme}>
           {contents}
-        </Tamagui.Provider>
+        </AppProvider>
       </NextThemeProvider>
     </>
   );

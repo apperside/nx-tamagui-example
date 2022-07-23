@@ -1,33 +1,10 @@
+import { HomeScreen, UserDetails } from "@nx-tamagui-example/ui";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {
-  Anchor,
-  Button,
-  H1,
-  H5,
-  MyCard,
-  MyComponent,
-  Paragraph,
-  Separator,
-  XStack,
-  YStack,
-} from '@nx-tamagui-example/ui';
-import React from 'react';
-import { Label } from 'tamagui';
-import { TextLink } from 'solito/link';
-import { MotiView } from 'moti';
 import * as Linking from 'expo-linking';
-import {HomeScreen,UserDetails} from "@nx-tamagui-example/ui"
+import React from 'react';
 
-import Animated, {
-  useSharedValue,
-  withTiming,
-  useAnimatedStyle,
-  Easing,
-} from 'react-native-reanimated';
 import {
-  Link,
-  NavigationContainer,
-  useNavigation,
+  NavigationContainer
 } from '@react-navigation/native';
 
 

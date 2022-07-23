@@ -27,11 +27,14 @@ __export(AppProvider_exports, {
 module.exports = __toCommonJS(AppProvider_exports);
 var import_config = require("@nx-tamagui-example/config");
 var import_react = __toESM(require("react"));
-const AppProvider = ({ children }) => {
+const AppProvider = ({
+  theme,
+  children
+}) => {
   return /* @__PURE__ */ import_react.default.createElement(import_config.config.Provider, {
     disableInjectCSS: true,
     disableRootThemeClass: true,
-    defaultTheme: "light"
+    defaultTheme: theme
   }, children);
 };
 var AppProvider_default = AppProvider;

@@ -1,6 +1,6 @@
 import 'react-native-reanimated'
 import 'react-native-gesture-handler';
 import { AppRegistry } from 'react-native';
-import EntryPoint from './app/EntryPoint';
+import App from './app/App';
 
-AppRegistry.registerComponent('MyApp', () => EntryPoint);
+AppRegistry.registerComponent('MyApp', () => App);
