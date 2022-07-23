@@ -4,6 +4,7 @@ const withNx = require('@nrwl/next/plugins/with-nx');
 const withPlugins = require('next-compose-plugins');
 const { withTamagui } = require('@tamagui/next-plugin');
 const withTM = require('next-transpile-modules');
+const { withExpo } = require('@expo/next-adapter');
 
 process.env.IGNORE_TS_CONFIG_PATHS = 'true';
 process.env.TAMAGUI_TARGET = 'web';
@@ -14,7 +15,7 @@ if (disableExtraction) {
 }
 
 const tamaguiConfig = {
-  config: './apps/web/tamagui.config.ts',
+  config: 'libs/config/src/AppTheme.ts',
   components: ['tamagui', '@nx-tamagui-example/ui','@nx-tamagui-example/config'],
   
   logTimings: true,
@@ -65,6 +66,7 @@ const transform = withPlugins([
     'expo-constants',
     '@nx-tamagui-example/ui',
   ]),
+  [withExpo, { projectRoot: __dirname }],
   withNx(nextConfig),
   withTamagui(tamaguiConfig),
 ]);
