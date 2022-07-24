@@ -16,12 +16,15 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Head>
-        <title>Tamagui in Nx Workspaces</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-      <NextThemeProvider onChangeTheme={setTheme}>
-        <AppProvider theme={theme}>
+      <NextThemeProvider  onChangeTheme={setTheme}>
+        <AppProvider theme={'light'}>
+          <Head>
+            <title>Tamagui in Nx Workspaces</title>
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
+          </Head>
           {contents}
         </AppProvider>
       </NextThemeProvider>

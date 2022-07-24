@@ -13,7 +13,7 @@ export const AppProvider = ({
     <Tamagui.Provider
       disableInjectCSS
       disableRootThemeClass
-      defaultTheme={theme}
+      defaultTheme={"light"}
     >
       {children}
     </Tamagui.Provider>

@@ -18,7 +18,7 @@ export const HomeScreen = () => {
           Here is a basic starter to show navigating from one screen to another.
           This screen uses the same code on Next.js and React Native.
         </Paragraph>
-        <MyComponent />
+        <MyComponent ta="center" >this is a custom component with a custom color </MyComponent>
         <Separator />
         <Paragraph ta="center">
           Tamagui is made by{' '}
