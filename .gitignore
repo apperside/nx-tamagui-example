@@ -121,3 +121,5 @@ apps/my-app-e2e/artifacts
 /.pnp
 .pnp.js
 # @end @expo/next-adapter
+
+**/tsconfig.tsbuildinfo
