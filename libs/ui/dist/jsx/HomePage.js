@@ -7,6 +7,7 @@ import {
   XStack,
   YStack
 } from "@nx-tamagui-example/ui";
+import { SheetDemo } from "@nx-tamagui-example/ui/src/SheetDemo";
 import { TextLink } from "solito/link";
 import { Label } from "tamagui";
 const HomeScreen = () => {
@@ -15,6 +16,7 @@ const HomeScreen = () => {
       <H1 ta="center">Welcome to Tamagui.</H1>
       <Paragraph ta="center">Here is a basic starter to show navigating from one screen to another. This screen uses the same code on Next.js and React Native.</Paragraph>
       <MyComponent />
+      <SheetDemo />
       <Separator />
       <Paragraph ta="center">
         {"Tamagui is made by"}
