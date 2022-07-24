@@ -1,15 +1,19 @@
 import {
-  Anchor, H1, MyComponent, Paragraph,
+  Anchor,
+  H1,
+  MyComponent,
+  Paragraph,
   Separator,
   XStack,
   YStack
 } from '@nx-tamagui-example/ui';
+import { SheetDemo } from "@nx-tamagui-example/ui/src/SheetDemo";
+import React from 'react';
 import { TextLink } from 'solito/link';
 import { Label } from 'tamagui';
-import React from "react"
 
 export const HomeScreen = () => {
-
+  
   return (
     <YStack f={1} jc="center" ai="center" p="$4" space>
       <YStack space="$4" maw={600}>
@@ -19,6 +23,7 @@ export const HomeScreen = () => {
           This screen uses the same code on Next.js and React Native.
         </Paragraph>
         <MyComponent />
+        <SheetDemo/>
         <Separator />
         <Paragraph ta="center">
           Tamagui is made by{' '}
@@ -54,7 +59,11 @@ export const HomeScreen = () => {
 
       <XStack>
         {/* <Button href={'/user/nate'}>Link to user</Button> */}
-        <Label color="$blue10" cursor={"pointer"}><TextLink style={{color:"white"}} href="/user/apperside">Link to user detail screen</TextLink></Label>
+        <Label color="$blue10" cursor={'pointer'}>
+          <TextLink style={{ color: 'white' }} href="/user/apperside">
+            Link to user detail screen
+          </TextLink>
+        </Label>
       </XStack>
     </YStack>
   );

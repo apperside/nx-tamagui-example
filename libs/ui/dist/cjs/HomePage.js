@@ -26,9 +26,10 @@ __export(HomePage_exports, {
 });
 module.exports = __toCommonJS(HomePage_exports);
 var import_ui = require("@nx-tamagui-example/ui");
+var import_SheetDemo = require("@nx-tamagui-example/ui/src/SheetDemo");
+var import_react = __toESM(require("react"));
 var import_link = require("solito/link");
 var import_tamagui = require("tamagui");
-var import_react = __toESM(require("react"));
 const HomeScreen = () => {
   return /* @__PURE__ */ import_react.default.createElement(import_ui.YStack, {
     f: 1,
@@ -43,7 +44,7 @@ const HomeScreen = () => {
     ta: "center"
   }, "Welcome to Tamagui."), /* @__PURE__ */ import_react.default.createElement(import_ui.Paragraph, {
     ta: "center"
-  }, "Here is a basic starter to show navigating from one screen to another. This screen uses the same code on Next.js and React Native."), /* @__PURE__ */ import_react.default.createElement(import_ui.MyComponent, null), /* @__PURE__ */ import_react.default.createElement(import_ui.Separator, null), /* @__PURE__ */ import_react.default.createElement(import_ui.Paragraph, {
+  }, "Here is a basic starter to show navigating from one screen to another. This screen uses the same code on Next.js and React Native."), /* @__PURE__ */ import_react.default.createElement(import_ui.MyComponent, null), /* @__PURE__ */ import_react.default.createElement(import_SheetDemo.SheetDemo, null), /* @__PURE__ */ import_react.default.createElement(import_ui.Separator, null), /* @__PURE__ */ import_react.default.createElement(import_ui.Paragraph, {
     ta: "center"
   }, "Tamagui is made by", " ", /* @__PURE__ */ import_react.default.createElement(import_ui.Anchor, {
     href: "https://twitter.com/natebirdman",

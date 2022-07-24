@@ -7,9 +7,10 @@ import {
   XStack,
   YStack
 } from "@nx-tamagui-example/ui";
+import { SheetDemo } from "@nx-tamagui-example/ui/src/SheetDemo";
+import React from "react";
 import { TextLink } from "solito/link";
 import { Label } from "tamagui";
-import React from "react";
 const HomeScreen = () => {
   return /* @__PURE__ */ React.createElement(YStack, {
     f: 1,
@@ -24,7 +25,7 @@ const HomeScreen = () => {
     ta: "center"
   }, "Welcome to Tamagui."), /* @__PURE__ */ React.createElement(Paragraph, {
     ta: "center"
-  }, "Here is a basic starter to show navigating from one screen to another. This screen uses the same code on Next.js and React Native."), /* @__PURE__ */ React.createElement(MyComponent, null), /* @__PURE__ */ React.createElement(Separator, null), /* @__PURE__ */ React.createElement(Paragraph, {
+  }, "Here is a basic starter to show navigating from one screen to another. This screen uses the same code on Next.js and React Native."), /* @__PURE__ */ React.createElement(MyComponent, null), /* @__PURE__ */ React.createElement(SheetDemo, null), /* @__PURE__ */ React.createElement(Separator, null), /* @__PURE__ */ React.createElement(Paragraph, {
     ta: "center"
   }, "Tamagui is made by", " ", /* @__PURE__ */ React.createElement(Anchor, {
     href: "https://twitter.com/natebirdman",
