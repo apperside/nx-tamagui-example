@@ -2,6 +2,13 @@
 
 # NxTamaguiExample
 
+This project contains a monorepo NX workspace with:
+- A NextJS web app
+- A Bare React Native project (NOT EXPO)
+- A library containing just the tamagui theme (it can be redistributed)
+- A library containing UI components that can be shared between web and mobile
+- The project is fully integrated with [React Navigation](https://reactnavigation.org) and [Solito](https://solito.dev) for cross platform navigation
+  
 This project was generated using [Nx](https://nx.dev).
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
