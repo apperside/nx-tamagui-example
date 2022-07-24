@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/index.tsx"],
-  "sourcesContent": ["// import config from './global';\nimport React from \"react\"\nexport * from 'tamagui';\nexport * from './MyComponent';\nexport * from './MyCard';\nexport * from './AppProvider';\nexport * from './UserDetails';\nexport * from './HomePage';\n// export { config };\n"],
-  "mappings": ";;;;;;;;;;;;;;;AAAA;AAAA;AAEA,wBAAc,oBAFd;AAGA,wBAAc,0BAHd;AAIA,wBAAc,qBAJd;AAKA,wBAAc,0BALd;AAMA,wBAAc,0BANd;AAOA,wBAAc,uBAPd;",
-  "names": []
-}

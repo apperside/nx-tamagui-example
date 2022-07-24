@@ -123,3 +123,4 @@ apps/my-app-e2e/artifacts
 # @end @expo/next-adapter
 
 **/tsconfig.tsbuildinfo
+**/dist
