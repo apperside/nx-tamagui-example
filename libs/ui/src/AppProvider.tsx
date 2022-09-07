@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 /* eslint-disable jsx-a11y/accessible-emoji */
-import { config as Tamagui } from '@nx-tamagui-example/config';
+import { config } from '@nx-tamagui-example/config';
+import { TamaguiProvider } from 'tamagui';
+
 import React from 'react';
 export const AppProvider = ({
   theme,
@@ -10,13 +12,14 @@ export const AppProvider = ({
   theme?: string;
 }) => {
   return (
-    <Tamagui.Provider
-      disableInjectCSS
-      disableRootThemeClass
-      defaultTheme={"light"}
+    <TamaguiProvider
+      config={config}
+      // disableInjectCSS
+      // disableRootThemeClass
+      // defaultTheme={"light"}
     >
       {children}
-    </Tamagui.Provider>
+    </TamaguiProvider>
   );
 };
 export default AppProvider;

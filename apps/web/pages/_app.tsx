@@ -1,7 +1,8 @@
 import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-
+import { config } from '@nx-tamagui-example/config';
+import { TamaguiProvider } from 'tamagui';
 import { AppProvider } from '@nx-tamagui-example/ui';
 import { useMemo } from 'react';
 
@@ -16,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <NextThemeProvider  onChangeTheme={setTheme}>
+       <NextThemeProvider  onChangeTheme={setTheme}>
         <AppProvider theme={'light'}>
           <Head>
             <title>Tamagui in Nx Workspaces</title>

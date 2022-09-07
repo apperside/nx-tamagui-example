@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import { StackPropsBase } from 'tamagui';
 declare type Props = {
     children: any;

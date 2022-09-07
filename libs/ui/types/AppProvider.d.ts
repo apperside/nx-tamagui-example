@@ -1,3 +1,4 @@
+/// <reference types="react" />
 export declare const AppProvider: ({ theme, children, }: {
     children: any;
     theme?: string | undefined;
