@@ -124,3 +124,6 @@ apps/my-app-e2e/artifacts
 
 **/tsconfig.tsbuildinfo
 **/dist
+
+# Next.js
+.next
