@@ -1,0 +1,12 @@
+diff --git a/node_modules/@tamagui/feather-icons/types/IconProps.d.ts b/node_modules/@tamagui/feather-icons/types/IconProps.d.ts
+index 1810ff4..4625559 100644
+--- a/node_modules/@tamagui/feather-icons/types/IconProps.d.ts
++++ b/node_modules/@tamagui/feather-icons/types/IconProps.d.ts
+@@ -3,5 +3,6 @@ export declare type IconProps = Omit<SvgProps, 'onPress' | 'onPressIn' | 'onPres
+     size?: number;
+     color?: string;
+     style?: any;
++    onClick?: ()=>void
+ };
+ //# sourceMappingURL=IconProps.d.ts.map
+\ No newline at end of file

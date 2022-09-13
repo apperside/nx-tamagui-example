@@ -76,6 +76,6 @@ const config = createTamagui({
     pointerCoarse: { pointer: 'coarse' },
   },
 });
-console.log('app theme is', config.themes);
+// console.log('app theme is', config.themes);
 export { config };
 export default config;
