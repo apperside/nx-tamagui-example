@@ -1,1 +1,1 @@
-export * from "./AppTheme"
+export const prova="ciao";

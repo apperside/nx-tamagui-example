@@ -99,7 +99,7 @@ buck-out/
 **/vendor/bundle/
 
 
-apps/my-app-e2e/artifacts
+apps/foodelix-mobile-e2e/artifacts
 
 # @generated: @expo/next-adapter@4.0.9
 /.expo/*

@@ -6,11 +6,11 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "web": "nx run web:serve",
-    "mobile": "nx run my-app:start",
-    "ios": "npx nx run-ios my-app",
-    "android": "npx nx run-android my-app",
-    "rn-deps": "cd apps/my-app && yarn && cd .. && npx nx run my-app:ensure-symlink",
+    "web": "nx run foodelix-web:serve",
+    "mobile": "nx run foodelix-mobile:start",
+    "ios": "npx nx run-ios foodelix-mobile",
+    "android": "npx nx run-android foodelix-mobile",
+    "rn-deps": "cd apps/foodelix-mobile && yarn && cd .. && npx nx run foodelix-mobile:ensure-symlink",
     "postinstall": "patch-package"
   },
   "workspaces": [

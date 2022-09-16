@@ -1,5 +1,5 @@
 /* eslint-disable @nrwl/nx/enforce-module-boundaries */
-import { config } from '@nx-tamagui-example/config'
+import { config } from './AppTheme'
 
 type Conf = typeof config
 

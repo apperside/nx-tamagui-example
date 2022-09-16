@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 /* eslint-disable jsx-a11y/accessible-emoji */
-import { config } from '@nx-tamagui-example/config';
+import { config } from './AppTheme';
 import { TamaguiProvider } from 'tamagui';
 
 import React from 'react';

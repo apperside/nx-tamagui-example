@@ -1,4 +1,4 @@
-import { config } from '@nx-tamagui-example/config';
+import { config } from './AppTheme';
 declare type Conf = typeof config;
 declare module 'tamagui' {
     interface TamaguiCustomConfig extends Conf {

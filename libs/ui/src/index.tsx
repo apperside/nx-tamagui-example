@@ -1,9 +1,12 @@
 // import config from './global';
-import React from "react"
-export * from 'tamagui';
+import React from 'react';
+// export * from 'tamagui';
 export * from './MyComponent';
+export * from './Button';
+export * from './Label';
 export * from './MyCard';
 export * from './AppProvider';
 export * from './UserDetails';
 export * from './HomePage';
+export { AppTheme, config } from './AppTheme';
 // export { config };

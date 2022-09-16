@@ -1,4 +1,4 @@
-import { Button, Paragraph, YStack } from '@nx-tamagui-example/ui'
+import { Button, Paragraph, YStack } from 'tamagui'
 import React from 'react'
 import { createParam } from 'solito'
 import { useLink } from 'solito/link'

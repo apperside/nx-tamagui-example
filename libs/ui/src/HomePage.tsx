@@ -1,16 +1,18 @@
 import {
   Anchor,
   H1,
-  MyComponent,
   Paragraph,
   Separator,
   XStack,
   YStack,
-} from '@nx-tamagui-example/ui';
+  Text
+} from 'tamagui';
 import { TextLink } from 'solito/link';
-import { Label } from 'tamagui';
 import React from 'react';
 import Sidebar from './Sidebar';
+import { Button } from './Button';
+import { MyComponent } from './MyComponent';
+import { Label } from './Label';
 
 
 
@@ -25,6 +27,14 @@ export const HomeScreen = () => {
             Here is a basic starter to show navigating from one screen to
             another. This screen uses the same code on Next.js and React Native.
           </Paragraph>
+          <Button >ciao</Button>
+          <Label type="semiBold">Dashboard</Label>
+          {/* <Text type="semiBold" >Dashboard</Text> */}
+          {/* <Text fontFamily={"$heading"} >Dashboard</Text>
+          <Label>A label</Label>
+          
+          <Label>Another label</Label> */}
+
           <MyComponent ta="center">
             this is a custom component with a custom color{' '}
           </MyComponent>
@@ -44,6 +54,7 @@ export const HomeScreen = () => {
             </Anchor>
             .
           </Paragraph>
+          <Button />
           <Paragraph ta="center">
             This app is made by{' '}
             <Anchor href="https://apperside.com" target="_blank">

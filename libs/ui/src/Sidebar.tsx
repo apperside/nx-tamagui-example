@@ -30,7 +30,7 @@ function Sidebar({ items }: Props) {
               setIsCollapsed((prev) => !prev);
             }}
           >
-            <ChevronsLeft onClick={} />
+            <ChevronsLeft onClick={()=>{setIsCollapsed(prev=>!prev)}} />
           </Pressable>
           {/**
            *  You can add a header for the sidebar ex: logo
