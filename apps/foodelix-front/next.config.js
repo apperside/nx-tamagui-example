@@ -38,7 +38,7 @@ const transform = withPlugins([
     config: './libs/ui/src/AppTheme.ts',
 
     // Your design system (default: "tamagui")
-    components: ['@nx-tamagui-example/ui', 'tamagui'],
+    components: ['@nx-tamagui-example/ui', '@tamagui/theme-base', 'tamagui'],
 
     // Follow normalized imports matching these file names, attempt to evaluate
     // their exports for static extraction
@@ -75,7 +75,11 @@ const transform = withPlugins([
     // By default, we configure webpack to pass anything inside your root or design system
     // to the Tamagui loader. If you are importing files from an external package, use this:
     shouldExtract: (path, projectRoot) => {
-      if (path.includes('@nx-tamagui-example/ui') || path.includes('libs/ui')) {
+      if (
+        path.includes('@nx-tamagui-example/ui') ||
+        path.includes('libs/ui') ||
+        path.includes('@tamagui/theme-base')
+      ) {
         return true;
       }
     },

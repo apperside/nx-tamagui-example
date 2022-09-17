@@ -19,9 +19,11 @@ function CustomApp({ Component, pageProps }: AppProps) {
         <title>Welcome to foodelix-front!</title>
       </Head>
       <main className="app">
-        <NextThemeProvider onChangeTheme={setTheme}>
-          {contents}
-        </NextThemeProvider>
+        <AppProvider>
+          <NextThemeProvider onChangeTheme={setTheme}>
+            {contents}
+          </NextThemeProvider>
+        </AppProvider>
       </main>
     </>
   );

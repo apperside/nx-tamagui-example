@@ -17,7 +17,11 @@ export const Label = styled(TText, {
     type:{
       semiBold:{
         fontFamily:"Barlow-SemiBold",
-        fontSize:30
+        fontSize:""
+      },
+      buttonNormal:{
+        fontFamily:"Barlow-SemiBold",
+        fontSize:"$14"
       }
     },
 

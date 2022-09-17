@@ -20,7 +20,6 @@ export default class Document extends NextDocument {
         <style id="fontscss" dangerouslySetInnerHTML={{ __html: fonts }} />,
       ];
       return { ...page, styles: Children.toArray(styles) };
-    return { ...page, styles: Children.toArray(styles) };
   }
 
   render() {

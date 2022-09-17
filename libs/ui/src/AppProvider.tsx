@@ -5,7 +5,7 @@ import { TamaguiProvider } from 'tamagui';
 
 import React from 'react';
 export const AppProvider = ({
-  theme,
+  theme = 'dark',
   children,
 }: {
   children: any;

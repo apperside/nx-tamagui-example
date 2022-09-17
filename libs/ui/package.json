@@ -19,13 +19,13 @@
   },
   "dependencies": {
     "@nx-tamagui-example/config": "*",
-    "tamagui": "^1.0.1-beta.160",
-    "@tamagui/font-inter": "1.0.1-beta.160",
-    "@tamagui/shorthands": "1.0.1-beta.160",
-    "@tamagui/theme-base": "1.0.1-beta.160",
+    "tamagui": "^1.0.1-beta.165",
+    "@tamagui/font-inter": "1.0.1-beta.165",
+    "@tamagui/shorthands": "1.0.1-beta.165",
+    "@tamagui/theme-base": "1.0.1-beta.165",
     "solito": "*"
   },
   "devDependencies": {
-    "@tamagui/build": "^1.0.1-beta.160"
+    "@tamagui/build": "^1.0.1-beta.165"
   }
 }

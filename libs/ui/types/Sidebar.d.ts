@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import "./Sidebar.module.css";
+import './Sidebar.module.css';
 declare type Props = {
     items: any;
 };

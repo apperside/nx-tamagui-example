@@ -5,7 +5,7 @@ import {
   SubMenu,
   SidebarHeader,
 } from 'react-pro-sidebar';
-import  "./Sidebar.module.css";
+import './Sidebar.module.css';
 import {
   AlignJustify as IcAlignJustify,
   Heart as IcHeart,
@@ -14,23 +14,32 @@ import {
 import { XStack } from 'tamagui';
 import { useState } from 'react';
 import { Pressable } from 'react-native';
+import { getTokens, useTheme } from './AppTheme';
 type Props = {
   items: any;
 };
 
 function Sidebar({ items }: Props) {
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const theme = useTheme();
+  const tokens = getTokens();
+  console.log('theme is', theme);
   return (
     <XStack>
       <ProSidebar collapsed={isCollapsed}>
         <SidebarHeader>
           <Pressable
             onPress={() => {
-              alert()
+              alert();
               setIsCollapsed((prev) => !prev);
             }}
           >
-            <ChevronsLeft onClick={()=>{setIsCollapsed(prev=>!prev)}} />
+            <ChevronsLeft
+              color={theme.color.primaryColor}
+              onClick={() => {
+                setIsCollapsed((prev) => !prev);
+              }}
+            />
           </Pressable>
           {/**
            *  You can add a header for the sidebar ex: logo

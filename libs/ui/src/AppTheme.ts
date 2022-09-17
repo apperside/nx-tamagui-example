@@ -2,8 +2,14 @@
 /* eslint-disable @nrwl/nx/enforce-module-boundaries */
 import { createInterFont } from '@tamagui/font-inter';
 import { shorthands } from '@tamagui/shorthands';
-import { themes, tokens } from '@tamagui/theme-base';
-import { createTamagui, createFont } from '@tamagui/core';
+import { themes, tokens as tamaguiTokens } from '@tamagui/theme-base';
+import { useMemo } from 'react';
+
+import {
+  createTamagui,
+  createTokens,
+  getTokens as getTamaguiTokens,
+} from 'tamagui';
 
 const headingFont = createInterFont({
   transform: {
@@ -17,8 +23,8 @@ const headingFont = createInterFont({
   },
   family: 'Barlow-SemiBold',
   color: {
-    6: '$primaryColor',
-    7: '$secondaryColor',
+    // 6: '$primaryColor',
+    // 7: '$secondaryColor',
   },
   letterSpacing: {
     5: 2,
@@ -33,6 +39,10 @@ const headingFont = createInterFont({
   },
 });
 
+const buttonNormal = createInterFont({
+  family: 'Barlow-SemiBold',
+});
+
 const bodyFont = createInterFont(
   {},
   {
@@ -41,53 +51,43 @@ const bodyFont = createInterFont(
   }
 );
 
-// const config = createTamagui({
-//   themes,
-//   tokens:{
-//     ...tokens,
-//     size: {
-//       sm: 10,
-//       md: 15,
-//       lg: 25,
-//       // ...
-//     },
-//     color: {
-//       ...tokens.color,
-//       primaryColor: '#EA7C69',
-//       secondaryColor: '#9288E0',
-//       myColor: '#E97274',
-//     },
-//   },
-//   shorthands,
-//   fonts: {},
-// });
+export const appTokens = createTokens({
+  ...tamaguiTokens,
 
+  // font: {
+  //   heading: headingFont,
+  //   body: bodyFont,
+  //   buttonNormal,
+  // },
+
+  color: {
+    ...tamaguiTokens.color,
+    primaryColor: '#EA7C69',
+    secondaryColor: '#9288E0',
+    myColor: '#E97274',
+  },
+  size: {
+    ...tamaguiTokens.size,
+    sm: 10,
+    md: 15,
+    lg: 25,
+  },
+});
+
+export const getTokens = () => getTamaguiTokens() as typeof appTokens;
 const config = createTamagui({
+  themes,
+  tokens: appTokens,
   //   animations,
-  defaultTheme: 'light',
-  shouldAddPrefersColorThemes: true,
-  disableRootThemeClass: true,
-  themeClassNameOnRoot: true,
+  // defaultTheme: 'dark',
+  // shouldAddPrefersColorThemes: true,
+  // disableRootThemeClass: true,
+  // themeClassNameOnRoot: true,
   shorthands,
   fonts: {
     heading: headingFont,
     body: bodyFont,
-  },
-  themes,
-  tokens: {
-    ...tokens,
-    size: {
-      sm: 10,
-      md: 15,
-      lg: 25,
-      // ...
-    },
-    color: {
-      primaryColor: '#EA7C69',
-      secondaryColor: '#9288E0',
-      ...tokens.color,
-      myColor: '#E97274',
-    },
+    buttonNormal,
   },
   media: {
     xs: { maxWidth: 660 },
@@ -105,8 +105,33 @@ const config = createTamagui({
     hoverNone: { hover: 'none' },
     pointerCoarse: { pointer: 'coarse' },
   },
+  
 });
-// console.log('app theme is', themes);
+
+/**
+ *
+ * @returns Workaround function untill this get fixed https://github.com/tamagui/tamagui/issues/212
+ */
+export const useTheme = () => {
+  const tokens = getTokens();
+
+  const result = useMemo(() => {
+    return Object.keys(tokens).reduce((prev, currentOuter, index) => {
+      console.log('prev and current', prev, currentOuter);
+      prev[currentOuter] = Object.keys(tokens[currentOuter]).reduce(
+        (prev, current: string) => {
+          prev[current.slice(1)] = tokens[currentOuter][current]?.val;
+          return prev;
+        },
+        {}
+      );
+      return prev;
+    }, {});
+  }, [tokens]);
+  // console.log('result is');
+  return result as typeof config.tokens;
+};
+
 export { config };
 const AppTheme = config;
 export { AppTheme };

@@ -1,1 +1,1 @@
-{"version":3,"file":"Sidebar.d.ts","sourceRoot":"","sources":["../src/Sidebar.tsx"],"names":[],"mappings":";AAOA,OAAQ,sBAAsB,CAAC;AAS/B,aAAK,KAAK,GAAG;IACX,KAAK,EAAE,GAAG,CAAC;CACZ,CAAC;AAEF,iBAAS,OAAO,CAAC,EAAE,KAAK,EAAE,EAAE,KAAK,eA4BhC;AAED,eAAe,OAAO,CAAC"}
+{"version":3,"file":"Sidebar.d.ts","sourceRoot":"","sources":["../src/Sidebar.tsx"],"names":[],"mappings":";AAOA,OAAO,sBAAsB,CAAC;AAU9B,aAAK,KAAK,GAAG;IACX,KAAK,EAAE,GAAG,CAAC;CACZ,CAAC;AAEF,iBAAS,OAAO,CAAC,EAAE,KAAK,EAAE,EAAE,KAAK,eAoChC;AAED,eAAe,OAAO,CAAC"}

@@ -1,7 +1,7 @@
 import { HomeScreen } from '@nx-tamagui-example/ui';
 
 export const Index = () => {
-  return <HomeScreen />;
+  return <div>ciao</div>
 };
 
 export default Index;
