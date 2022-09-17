@@ -199,7 +199,7 @@ declare const config: import("@tamagui/core").TamaguiInternalConfig<{
         blue11Light: import("@tamagui/core").Variable<import("@tamagui/core").VariableValue>;
         blue12Light: import("@tamagui/core").Variable<import("@tamagui/core").VariableValue>;
         primaryColor: string;
-        secondary: string;
+        secondaryColor: string;
     };
     space: {
         true: import("@tamagui/core").Variable<import("@tamagui/core").VariableValue>;
@@ -8125,7 +8125,7 @@ declare const AppTheme: import("@tamagui/core").TamaguiInternalConfig<{
         blue11Light: import("@tamagui/core").Variable<import("@tamagui/core").VariableValue>;
         blue12Light: import("@tamagui/core").Variable<import("@tamagui/core").VariableValue>;
         primaryColor: string;
-        secondary: string;
+        secondaryColor: string;
     };
     space: {
         true: import("@tamagui/core").Variable<import("@tamagui/core").VariableValue>;

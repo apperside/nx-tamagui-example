@@ -5,7 +5,7 @@ import {
   SubMenu,
   SidebarHeader,
 } from 'react-pro-sidebar';
-import 'react-pro-sidebar/dist/css/styles.css';
+import  "./Sidebar.module.css";
 import {
   AlignJustify as IcAlignJustify,
   Heart as IcHeart,

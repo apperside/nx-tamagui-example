@@ -14,9 +14,9 @@ export const AppProvider = ({
   return (
     <TamaguiProvider
       config={config}
-      // disableInjectCSS
-      // disableRootThemeClass
-      // defaultTheme={"light"}
+      disableInjectCSS
+      disableRootThemeClass
+      defaultTheme={theme}
     >
       {children}
     </TamaguiProvider>

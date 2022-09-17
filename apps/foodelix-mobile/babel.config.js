@@ -6,7 +6,7 @@ module.exports = (api) => {
       [
         '@tamagui/babel-plugin',
         {
-          components: ['tamagui'],
+          components: ['@nx-tamagui-example/ui', 'tamagui'],
           config: 'tamagui.config.ts',
           importsWhitelist: ['constants.js', 'colors.js'],
           logTimings: true,

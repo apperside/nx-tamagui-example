@@ -1,8 +1,9 @@
+//! debug
 /* eslint-disable @nrwl/nx/enforce-module-boundaries */
 import { createInterFont } from '@tamagui/font-inter';
 import { shorthands } from '@tamagui/shorthands';
 import { themes, tokens } from '@tamagui/theme-base';
-import { createTamagui,createFont } from '@tamagui/core';
+import { createTamagui, createFont } from '@tamagui/core';
 
 const headingFont = createInterFont({
   transform: {
@@ -10,14 +11,14 @@ const headingFont = createInterFont({
     7: 'none',
   },
   weight: {
-    1:"1000",
+    1: '1000',
     6: '400',
     7: '700',
   },
-  family:"Barlow-SemiBold",
+  family: 'Barlow-SemiBold',
   color: {
-    6: '$primary',
-    7: '$secondary',
+    6: '$primaryColor',
+    7: '$secondaryColor',
   },
   letterSpacing: {
     5: 2,
@@ -39,6 +40,28 @@ const bodyFont = createInterFont(
     sizeLineHeight: (size) => Math.round(size * 1.1 + (size > 20 ? 10 : 10)),
   }
 );
+
+// const config = createTamagui({
+//   themes,
+//   tokens:{
+//     ...tokens,
+//     size: {
+//       sm: 10,
+//       md: 15,
+//       lg: 25,
+//       // ...
+//     },
+//     color: {
+//       ...tokens.color,
+//       primaryColor: '#EA7C69',
+//       secondaryColor: '#9288E0',
+//       myColor: '#E97274',
+//     },
+//   },
+//   shorthands,
+//   fonts: {},
+// });
+
 const config = createTamagui({
   //   animations,
   defaultTheme: 'light',
@@ -58,10 +81,10 @@ const config = createTamagui({
       md: 15,
       lg: 25,
       // ...
-    },  
+    },
     color: {
       primaryColor: '#EA7C69',
-      secondary: '#9288E0',
+      secondaryColor: '#9288E0',
       ...tokens.color,
       myColor: '#E97274',
     },
@@ -83,8 +106,8 @@ const config = createTamagui({
     pointerCoarse: { pointer: 'coarse' },
   },
 });
-// console.log('app theme is', config.themes);
+// console.log('app theme is', themes);
 export { config };
 const AppTheme = config;
-export {AppTheme}
+export { AppTheme };
 export default config;

@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
-    "build": "nx build",
+    "build": "next build",
     "test": "nx test",
     "web": "nx run foodelix-web:serve",
     "mobile": "nx run foodelix-mobile:start",
@@ -18,6 +18,9 @@
   ],
   "private": true,
   "dependencies": {
+    "@emotion/react": "11.10.4",
+    "@emotion/server": "11.10.0",
+    "@emotion/styled": "11.10.4",
     "@nrwl/next": "14.6.5",
     "@react-navigation/native": "^6.0.11",
     "@react-navigation/native-stack": "^6.7.0",
@@ -28,8 +31,8 @@
     "@tamagui/shorthands": "1.0.1-beta.160",
     "@tamagui/theme-base": "1.0.1-beta.160",
     "core-js": "^3.6.5",
-    "expo": "^45.0.0",
-    "expo-linking": "~3.1.0",
+    "expo": "^46.0.10",
+    "expo-linking": "~3.2.2",
     "moti": "^0.18.0",
     "next": "12.2.5",
     "react": "18.2.0",
@@ -47,7 +50,8 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@expo/next-adapter": "^4.0.9",
+    "@emotion/babel-plugin": "11.10.2",
+    "@expo/next-adapter": "^4.0.12",
     "@nrwl/cli": "14.6.5",
     "@nrwl/cypress": "14.6.5",
     "@nrwl/detox": "14.6.5",
@@ -89,6 +93,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "jest": "28.1.3",
     "jest-circus": "27.5.1",
+    "jest-environment-jsdom": "28.1.1",
     "jest-jasmine2": "28.1.1",
     "jest-react-native": "18.0.0",
     "metro": "0.72.1",

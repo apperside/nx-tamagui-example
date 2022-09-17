@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "config": "libs/config",
+    "foodelix-front": "apps/foodelix-front",
+    "foodelix-front-e2e": "apps/foodelix-front-e2e",
     "foodelix-mobile": "apps/foodelix-mobile",
     "foodelix-mobile-e2e": "apps/foodelix-mobile-e2e",
     "foodelix-web": "apps/foodelix-web",

@@ -28,7 +28,7 @@ export const HomeScreen = () => {
             another. This screen uses the same code on Next.js and React Native.
           </Paragraph>
           <Button >ciao</Button>
-          <Label type="semiBold">Dashboard</Label>
+          <Label type="semiBold">Dashbaaoard</Label>
           {/* <Text type="semiBold" >Dashboard</Text> */}
           {/* <Text fontFamily={"$heading"} >Dashboard</Text>
           <Label>A label</Label>
@@ -75,7 +75,7 @@ export const HomeScreen = () => {
         <XStack>
           {/* <Button href={'/user/nate'}>Link to user</Button> */}
           <TextLink style={{ color: 'white' }} href="/user/apperside">
-            <Label color="$blue10" cursor={'pointer'}>
+            <Label color="$blue10Dark" cursor={'pointer'}>
               Link to user detail screen
             </Label>
           </TextLink>
